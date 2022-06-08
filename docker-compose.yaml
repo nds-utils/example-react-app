@@ -1,0 +1,13 @@
+services:
+  example-react-app:
+    container_name: example-react-app
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - 3001:3001
+    volumes:
+      - .:/app
+      - example-react-app-node_modules:/app/node_modules
+volumes:
+  example-react-app-node_modules:
