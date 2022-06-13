@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { helloWorld } from '@nds-tickets-common/hello-world-example'
 
 function App() {
+  helloWorld()
   return (
     <div className="App">
       <header className="App-header">
