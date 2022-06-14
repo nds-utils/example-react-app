@@ -4,7 +4,7 @@ WORKDIR /app
 
 ARG NPM_TOKEN
 
-COPY .npmrc ./.npmrc
+RUN echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ./.npmrc
 
 COPY package*.json ./
 
